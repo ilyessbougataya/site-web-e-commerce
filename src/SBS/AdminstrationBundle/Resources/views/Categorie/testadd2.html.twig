@@ -1,0 +1,23 @@
+{% extends "SBSAdminstrationBundle::tempalte.html.twig" %}
+
+{% block enhead %}
+	<h2>Categorie</h2>   
+    <h5>Ajouter un nouveau Categorie  </h5>
+{% endblock %}
+
+{% block contenu %}
+				
+ <div class="form">
+ <form method="post" action={{ path('sbs_adminstration_testadd') }} enctype="multipart/form-data" >
+ <fieldset>
+      <div class="form-group">
+      		<label>Image </label>
+      		<input type="file" name="mouhcine" />
+      </div>
+   <button type="submit" class="btn btn-default">Ajouter</button>
+  </fieldset>
+  </form>
+   </div>
+
+ {% endblock %}
+

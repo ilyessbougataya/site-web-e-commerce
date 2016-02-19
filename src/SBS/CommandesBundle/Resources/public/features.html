@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>TenderShop</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		
+		<!-- Metatag -->
+		<meta property="og:title" content="Tender Shop" />
+		<meta property="og:type" content="website" />
+		<meta property="og:description" content="Minimalist  Responsive eCommerce Template" />
+		<meta property="og:url" content="http://ninetheme.com/" />
+		<meta property="og:image" content="http://ninetheme.com/logo.png" />
+		
+		<link rel="stylesheet" href="css/bootstrap.min.css" />
+		<link rel="stylesheet" href="css/font.css" />
+		<link rel="stylesheet" href="css/style.css" />
+		
+		<!-- Favicon -->
+		<link rel="icon" href="img/hsfavicon.png">
+		
+		<!-- =========== -->
+		<!-- Google Font -->
+		<!-- =========== -->
+				
+		<script type="text/javascript">
+		
+			// Add Google Font name here
+			
+			WebFontConfig = { google: { families: [ 'Bangers', 'Lato' ] } };
+			(function() {
+			var wf = document.createElement('script');
+			wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +
+			'://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
+			wf.type = 'text/javascript';
+			wf.async = 'true';
+			var s = document.getElementsByTagName('script')[0];
+			s.parentNode.insertBefore(wf, s);
+			})();
+			
+		</script>
+		
+		<style type="text/css">
+		
+			/* Add Google Font name here */
+
+			.wf-active {font-family: 'Lato',serif; font-size: 13px;}
+			.wf-active .logo {font-family: 'Bangers', serif;}
+			
+		</style>
+		
+		<!--[if lt IE 9]>
+			<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+		<!--[if IE 7]>
+			<link rel="stylesheet" href="css/ie7.css" />
+		<![endif]-->
+		
+	</head>
+
+	<body class="wf-active">	
+		
+		<!-- =========== -->
+		<!-- Top section -->
+		<!-- =========== -->
+		
+		<div class="header-container">
+		<div class="container welcome">
+			<div class="row-fluid">
+				<div class="pull-left greet">
+					Welcome shopper, <a href="login.html">login here</a>
+				</div>
+				<div class="pull-right cart tright">
+					
+					<!-- Cart Updates -->
+					<div class="counter">
+						<a href="javascript:void(0);"><i class="icon-basket"></i> Your cart </a> : <span class="theme">$139</span>
+					</div>
+					
+					<!-- Bubble Cart Item -->
+					<div class="cartbubble">
+				
+						<div class="arrow-box">
+							
+							<!-- Item 1 -->
+							<div class="clearfix">
+								<a href="#">Sample Tshirt Stripes...</a> <span class="theme pull-right">$55</span>
+							</div>
+							
+							<!-- Item 2 -->
+							<div class="clearfix">
+								<a href="#">Sample Dress in cart</a> <span class="theme pull-right">$73</span>
+							</div>
+							
+							<!-- Item 3 -->
+							<div class="clearfix">
+								<a href="#">Sample Socks in cart</a> <span class="theme pull-right">$11</span>
+							</div>
+							<hr />
+							<!-- Total -->
+							<div class="clearfix">
+								TOTAL <span class="theme pull-right">$139</span>
+							</div>
+							<hr />
+							<div class="clearfix">
+								<a href="javascript:void(0)" id="closeit">Close</a>
+								<a href="checkout.html" class="btn theme btn-mini pull-right">Checkout</a>
+							</div>
+						</div>
+						
+					</div>
+				</div>
+			</div>	
+		</div>
+
+		<!-- ================ -->
+		<!-- Branding section -->
+		<!-- ================ -->
+		
+		<div class="container head">
+			<div class="row">
+				<div class="span12 clearfix">
+					<div class="top row">
+						
+						<div class="span8 logo text" style="display:none"><a href="index.html">TenderShop</a></div>
+						<div class="span8 logo image"><a href="index.html"><img src="img/highreslogo.png" alt="" /></a></div>
+						
+						<div class="cart span4">
+							<form action="#" class="topsearch">
+								<input type="search" class="top-search" placeholder="Search"/>
+								<button type="submit"><i class="icon-search"></i></button>
+							</form>
+						</div>
+						
+					</div>	
+				</div>
+			</div>
+		</div>
+		
+		<!-- ================ -->
+		<!-- Main Nav section -->
+		<!-- ================ -->
+		
+		<div class="container-menu">
+		<div class="container">
+			<div class="row">		
+				<div class="span12">
+					<nav class="horizontal-nav full-width">
+						<ul class="nav" id="nav">
+							<li>
+								<a href="#">Pages</a>
+								<ul class="nav">
+									<li><a href="index.html">Homepage Default</a></li>
+									<li><a href="index-filterable.html">Homepage Filterable</a></li>
+									<li><a href="index-carousel.html">Slider with Carousel</a></li>
+									<li><a href="page.html">Full page</a></li>
+									<li><a href="page-right-sidebar.html">Right sidebar</a></li>
+									<li><a href="page-left-sidebar.html">Left sidebar</a></li>
+									<li><a href="login.html">Login Page</a></li>
+									<li><a href="checkout.html">Checkout Page</a></li>
+								</ul>
+							</li>
+							<li>
+								<a href="#">Product</a>
+								<ul class="nav">
+									<li><a href="product-list.html">Products List Sortable</a></li>
+									<li><a href="product-list-sidebar.html">Products list with sidebar</a></li>
+									<li><a href="product.html">Product page</a></li>
+								</ul>
+							</li>
+							<li><a href="features.html">Features</a></li>
+							<li>
+								<a href="#">Blog</a>
+								<ul class="nav">
+									<li><a href="blog-right-sidebar.html">blog right sidebar</a></li>
+									<li><a href="blog-left-sidebar.html">blog left sidebar</a></li>
+									<li><a href="post-right-sidebar.html">post right sidebar</a></li>
+									<li><a href="post-left-sidebar.html">post left sidebar</a></li>
+								</ul>
+							</li>
+							<li><a href="contact.html">Contact</a></li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</div>
+		</div>
+		</div>
+		
+		
+		<div class="container">
+
+			<!-- ============= -->
+			<!-- Page template -->
+			<!-- ============= -->
+
+			<section class="page">
+
+				<div class="row">
+					<header class="span12 prime">
+						<h3>Theme Features</h3>
+					</header>
+				</div>
+
+				<div class="wrap">
+					<div class="row-fluid">
+
+					<div class="span12">
+						<h5>Grid Features</h5>
+						<p>The default Bootstrap grid system utilizes 12 columns. Below 767px viewports, the columns become fluid and stack vertically.</p>
+						<p>For more details, you can refer to <a href="http://twitter.github.com/bootstrap/scaffolding.html#gridSystem" target="_blank">Twitter Bootstrap</a> documentations.</p>
+
+						<div class="row-fluid">
+							<div class="span1 demobox">1</div>
+							<div class="span1 demobox">1</div>
+							<div class="span1 demobox">1</div>
+							<div class="span1 demobox">1</div>
+							<div class="span1 demobox">1</div>
+							<div class="span1 demobox">1</div>
+							<div class="span1 demobox">1</div>
+							<div class="span1 demobox">1</div>
+							<div class="span1 demobox">1</div>
+							<div class="span1 demobox">1</div>
+							<div class="span1 demobox">1</div>
+							<div class="span1 demobox">1</div>
+						</div>
+
+						<div class="row-fluid">
+							<div class="span2 demobox">2</div>
+							<div class="span2 demobox">2</div>
+							<div class="span2 demobox">2</div>
+							<div class="span2 demobox">2</div>
+							<div class="span2 demobox">2</div>
+							<div class="span2 demobox">2</div>
+						</div>
+
+						<div class="row-fluid">
+							<div class="span3 demobox">3</div>
+							<div class="span3 demobox">3</div>
+							<div class="span3 demobox">3</div>
+							<div class="span3 demobox">3</div>
+						</div>
+
+						<div class="row-fluid">
+							<div class="span4 demobox">4</div>
+							<div class="span4 demobox">4</div>
+							<div class="span4 demobox">4</div>
+						</div>
+
+						<div class="row-fluid">
+							<div class="span6 demobox">6</div>
+							<div class="span6 demobox">6</div>
+						</div>
+
+						<div class="row-fluid">
+							<div class="span5 demobox">5</div>
+							<div class="span2 demobox">2</div>
+							<div class="span5 demobox">5</div>
+						</div>
+
+						<hr>
+
+						<div class="row-fluid">
+							<div class="span6">
+								<h5>Typography</h5>
+								<p><strong>Heading</strong> : All HTML headings, h1 through h6 are available.</p>
+								<h1>Heading 1</h1>
+								<h2>Heading 2</h2>
+								<h3>Heading 3</h3>
+								<h4>Heading 4</h4>
+								<h5>Heading 5</h5>
+								<h6>Heading 6</h6>
+							</div>
+							<div class="span6">
+								<h5>Buttons</h5>
+								<p>
+									<button class="btn">Default</button> 
+									<button class="btn btn-primary">Primary</button>
+									<button class="btn btn-info">Info</button>
+									<button class="btn btn-success">Success</button>
+									<button class="btn btn-danger">Danger</button>
+									<button class="btn btn-inverse">Inverse</button>
+								</p>
+
+								<p><button class="btn btn-large btn-block btn-primary" type="button">Block level button</button></p>
+
+								<p><button class="btn btn-large btn-block theme" type="button">Block theme color</button></p>
+
+								<hr>
+								<h5>Images</h5>	
+								<p>
+									<img src="http://placehold.it/120x120" class="img-rounded">
+									<img src="http://placehold.it/120x120" class="img-circle">
+									<img src="http://placehold.it/120x120" class="img-polaroid">
+								</p>
+							</div>
+						</div>
+
+						<hr>
+						<h5>Modal Box</h5>
+						<p>Modals are streamlined, but flexible, dialog prompts with the minimum required functionality and smart defaults.</p>
+						<p>For details implementation, visit <a href="http://twitter.github.com/bootstrap/javascript.html#modals" target="_blank">Twitter Bootstrap</a> documentation.</p>
+						<!-- Button to trigger modal -->
+						<a href="#myModal" role="button" class="btn" data-toggle="modal">Launch demo modal</a>
+
+						<!-- Modal -->
+						<div id="myModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+						  <div class="modal-header">
+						    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+						    <h3 id="myModalLabel">Modal header</h3>
+						  </div>
+						  <div class="modal-body">
+						    <p>One fine body…</p>
+						  </div>
+						  <div class="modal-footer">
+						    <button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
+						    <button class="btn btn-primary">Save changes</button>
+						  </div>
+						</div>
+						<script type="text/javascript">$('#myModal').modal();</script>
+
+						<hr>
+						<h5>Tabs</h5>
+						<p>Add quick, dynamic tab functionality to transiton through panes of local content, even via dropdown menus.</p>
+
+						<ul class="nav nav-tabs" id="myTab">
+						  <li class="active"><a href="#home">Home</a></li>
+						  <li><a href="#profile">Profile</a></li>
+						  <li><a href="#messages">Messages</a></li>
+						  <li><a href="#settings">Settings</a></li>
+						</ul>
+
+						<div class="tab-content">
+						  <div class="tab-pane active" id="home">Home tab content</div>
+						  <div class="tab-pane" id="profile">Profile tab content</div>
+						  <div class="tab-pane" id="messages">Message tab content</div>
+						  <div class="tab-pane" id="settings">Setting tab content</div>
+						</div>
+
+						<script>
+						  $(function () {
+						    $('#myTab a:last').tab('show');
+						  })
+						</script>
+
+						<hr>
+						<h5>Collapsable Tab</h5>
+						<p>Get base styles and flexible support for collapsible components like accordions and navigation.</p>
+
+						<div class="accordion" id="accordion2">
+						  <div class="accordion-group">
+						    <div class="accordion-heading">
+						      <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseOne">
+						        <i class="icon-menu theme"></i> Collapsible Panel 1
+						      </a>
+						    </div>
+						    <div id="collapseOne" class="accordion-body collapse in">
+						      <div class="accordion-inner">
+						        Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Proin vel ante a orci tempus eleifend ut et magna. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus luctus urna sed urna ultricies ac tempor dui sagittis. In condimentum facilisis porta. Sed nec diam eu diam mattis viverra. Nulla fringilla, orci ac euismod semper, magna diam porttitor mauris, quis sollicitudin sapien justo in libero.
+						      </div>
+						    </div>
+						  </div>
+						  <div class="accordion-group">
+						    <div class="accordion-heading">
+						      <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseTwo">
+						        <i class="icon-menu theme"></i> Collapsible Panel 2
+						      </a>
+						    </div>
+						    <div id="collapseTwo" class="accordion-body collapse">
+						      <div class="accordion-inner">
+						       Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Sed molestie augue sit amet leo consequat posuere. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Proin vel ante a orci tempus eleifend ut et magna.	
+						      </div>
+						    </div>
+						  </div>
+						</div>
+
+						<script type="text/javascript">$(".collapse").collapse()</script>
+
+						<hr>
+
+						<h5>Payment Option</h5>
+
+						<p>There's 14 payment option icons ready for you to choose.</p>
+						<div class="clearfix">
+							<div class="payment amex"></div>
+							<div class="payment mastercard"></div>
+							<div class="payment visa"></div>
+							<div class="payment paypal"></div>
+							<div class="payment cirrus"></div>
+							<div class="payment delta"></div>
+							<div class="payment direct-debit"></div>
+							<div class="payment discover"></div>
+							<div class="payment ebay"></div>
+							<div class="payment googlecheckout"></div>
+							<div class="payment maestro"></div>
+							<div class="payment moneybookers"></div>
+							<div class="payment sagepay"></div>
+							<div class="payment solo"></div>
+							<div class="payment switch"></div>
+							<div class="payment visaelectron"></div>
+							<div class="payment 2checkout"></div>
+							<div class="payment westernunion"></div> 
+						</div>	
+
+						<hr>
+
+						<h5>Icons</h5>
+						<p>Tendershop is using entypo font icons, 200+ in total.</p>
+						<div class="row-fluid demoicon">
+					        <div class="span3">
+					          <ul class="the-icons"><li><i class="icon-plus"></i> icon-plus</li><li><i class="icon-minus"></i> icon-minus</li><li><i class="icon-info"></i> icon-info</li><li><i class="icon-left-thin"></i> icon-left-thin</li><li><i class="icon-up-thin"></i> icon-up-thin</li><li><i class="icon-right-thin"></i> icon-right-thin</li><li><i class="icon-down-thin"></i> icon-down-thin</li><li><i class="icon-level-up"></i> icon-level-up</li><li><i class="icon-level-down"></i> icon-level-down</li><li><i class="icon-switch"></i> icon-switch</li><li><i class="icon-infinity"></i> icon-infinity</li><li><i class="icon-plus-squared"></i> icon-plus-squared</li><li><i class="icon-minus-squared"></i> icon-minus-squared</li><li><i class="icon-home"></i> icon-home</li><li><i class="icon-keyboard"></i> icon-keyboard</li><li><i class="icon-erase"></i> icon-erase</li><li><i class="icon-pause"></i> icon-pause</li><li><i class="icon-fast-forward"></i> icon-fast-forward</li><li><i class="icon-fast-backward"></i> icon-fast-backward</li><li><i class="icon-to-end"></i> icon-to-end</li><li><i class="icon-to-start"></i> icon-to-start</li><li><i class="icon-hourglass"></i> icon-hourglass</li><li><i class="icon-stop"></i> icon-stop</li><li><i class="icon-up-dir"></i> icon-up-dir</li><li><i class="icon-play"></i> icon-play</li><li><i class="icon-right-dir"></i> icon-right-dir</li><li><i class="icon-down-dir"></i> icon-down-dir</li><li><i class="icon-left-dir"></i> icon-left-dir</li><li><i class="icon-adjust"></i> icon-adjust</li><li><i class="icon-cloud"></i> icon-cloud</li><li><i class="icon-star"></i> icon-star</li><li><i class="icon-star-empty"></i> icon-star-empty</li><li><i class="icon-cup"></i> icon-cup</li><li><i class="icon-menu"></i> icon-menu</li><li><i class="icon-moon"></i> icon-moon</li><li><i class="icon-heart-empty"></i> icon-heart-empty</li><li><i class="icon-heart"></i> icon-heart</li><li><i class="icon-note"></i> icon-note</li><li><i class="icon-note-beamed"></i> icon-note-beamed</li><li><i class="icon-layout"></i> icon-layout</li><li><i class="icon-flag"></i> icon-flag</li><li><i class="icon-tools"></i> icon-tools</li><li><i class="icon-cog"></i> icon-cog</li><li><i class="icon-attention"></i> icon-attention</li><li><i class="icon-flash"></i> icon-flash</li><li><i class="icon-record"></i> icon-record</li><li><i class="icon-cloud-thunder"></i> icon-cloud-thunder</li><li><i class="icon-tape"></i> icon-tape</li><li><i class="icon-flight"></i> icon-flight</li><li><i class="icon-mail"></i> icon-mail</li><li><i class="icon-pencil"></i> icon-pencil</li><li><i class="icon-feather"></i> icon-feather</li><li><i class="icon-check"></i> icon-check</li><li><i class="icon-cancel"></i> icon-cancel</li><li><i class="icon-cancel-circled"></i> icon-cancel-circled</li><li><i class="icon-cancel-squared"></i> icon-cancel-squared</li><li><i class="icon-help"></i> icon-help</li><li><i class="icon-quote"></i> icon-quote</li><li><i class="icon-plus-circled"></i> icon-plus-circled</li><li><i class="icon-minus-circled"></i> icon-minus-circled</li><li><i class="icon-right"></i> icon-right</li><li><i class="icon-direction"></i> icon-direction</li><li><i class="icon-forward"></i> icon-forward</li><li><i class="icon-ccw"></i> icon-ccw</li><li><i class="icon-cw"></i> icon-cw</li><li><i class="icon-left"></i> icon-left</li><li><i class="icon-up"></i> icon-up</li><li><i class="icon-down"></i> icon-down</li><li><i class="icon-list-add"></i> icon-list-add</li><li><i class="icon-list"></i> icon-list</li><li><i class="icon-left-bold"></i> icon-left-bold</li><li><i class="icon-right-bold"></i> icon-right-bold</li>
+					          </ul>
+					        </div>
+					        <div class="span3">
+					          <ul class="the-icons"><li><i class="icon-up-bold"></i> icon-up-bold</li><li><i class="icon-down-bold"></i> icon-down-bold</li><li><i class="icon-user-add"></i> icon-user-add</li><li><i class="icon-help-circled"></i> icon-help-circled</li><li><i class="icon-info-circled"></i> icon-info-circled</li><li><i class="icon-eye"></i> icon-eye</li><li><i class="icon-tag"></i> icon-tag</li><li><i class="icon-upload-cloud"></i> icon-upload-cloud</li><li><i class="icon-reply"></i> icon-reply</li><li><i class="icon-reply-all"></i> icon-reply-all</li><li><i class="icon-code"></i> icon-code</li><li><i class="icon-export"></i> icon-export</li><li><i class="icon-print"></i> icon-print</li><li><i class="icon-retweet"></i> icon-retweet</li><li><i class="icon-comment"></i> icon-comment</li><li><i class="icon-chat"></i> icon-chat</li><li><i class="icon-vcard"></i> icon-vcard</li><li><i class="icon-address"></i> icon-address</li><li><i class="icon-location"></i> icon-location</li><li><i class="icon-map"></i> icon-map</li><li><i class="icon-compass"></i> icon-compass</li><li><i class="icon-trash"></i> icon-trash</li><li><i class="icon-doc"></i> icon-doc</li><li><i class="icon-doc-text-inv"></i> icon-doc-text-inv</li><li><i class="icon-docs"></i> icon-docs</li><li><i class="icon-doc-landscape"></i> icon-doc-landscape</li><li><i class="icon-archive"></i> icon-archive</li><li><i class="icon-rss"></i> icon-rss</li><li><i class="icon-share"></i> icon-share</li><li><i class="icon-basket"></i> icon-basket</li><li><i class="icon-shareable"></i> icon-shareable</li><li><i class="icon-login"></i> icon-login</li><li><i class="icon-logout"></i> icon-logout</li><li><i class="icon-volume"></i> icon-volume</li><li><i class="icon-resize-full"></i> icon-resize-full</li><li><i class="icon-resize-small"></i> icon-resize-small</li><li><i class="icon-popup"></i> icon-popup</li><li><i class="icon-publish"></i> icon-publish</li><li><i class="icon-window"></i> icon-window</li><li><i class="icon-arrow-combo"></i> icon-arrow-combo</li><li><i class="icon-chart-pie"></i> icon-chart-pie</li><li><i class="icon-language"></i> icon-language</li><li><i class="icon-air"></i> icon-air</li><li><i class="icon-database"></i> icon-database</li><li><i class="icon-drive"></i> icon-drive</li><li><i class="icon-bucket"></i> icon-bucket</li><li><i class="icon-thermometer"></i> icon-thermometer</li><li><i class="icon-down-circled"></i> icon-down-circled</li><li><i class="icon-left-circled"></i> icon-left-circled</li><li><i class="icon-right-circled"></i> icon-right-circled</li><li><i class="icon-up-circled"></i> icon-up-circled</li><li><i class="icon-down-open"></i> icon-down-open</li><li><i class="icon-left-open"></i> icon-left-open</li><li><i class="icon-right-open"></i> icon-right-open</li><li><i class="icon-up-open"></i> icon-up-open</li><li><i class="icon-down-open-mini"></i> icon-down-open-mini</li><li><i class="icon-left-open-mini"></i> icon-left-open-mini</li><li><i class="icon-right-open-mini"></i> icon-right-open-mini</li><li><i class="icon-up-open-mini"></i> icon-up-open-mini</li><li><i class="icon-down-open-big"></i> icon-down-open-big</li><li><i class="icon-left-open-big"></i> icon-left-open-big</li><li><i class="icon-right-open-big"></i> icon-right-open-big</li><li><i class="icon-up-open-big"></i> icon-up-open-big</li><li><i class="icon-progress-0"></i> icon-progress-0</li><li><i class="icon-progress-1"></i> icon-progress-1</li><li><i class="icon-progress-2"></i> icon-progress-2</li><li><i class="icon-progress-3"></i> icon-progress-3</li><li><i class="icon-back-in-time"></i> icon-back-in-time</li><li><i class="icon-network"></i> icon-network</li><li><i class="icon-inbox"></i> icon-inbox</li><li><i class="icon-install"></i> icon-install</li><li><i class="icon-lifebuoy"></i> icon-lifebuoy</li>
+					          </ul>
+					        </div>
+					        <div class="span3">
+					          <ul class="the-icons"><li><i class="icon-mouse"></i> icon-mouse</li><li><i class="icon-dot"></i> icon-dot</li><li><i class="icon-dot-2"></i> icon-dot-2</li><li><i class="icon-dot-3"></i> icon-dot-3</li><li><i class="icon-suitcase"></i> icon-suitcase</li><li><i class="icon-flow-cascade"></i> icon-flow-cascade</li><li><i class="icon-flow-branch"></i> icon-flow-branch</li><li><i class="icon-flow-tree"></i> icon-flow-tree</li><li><i class="icon-flow-line"></i> icon-flow-line</li><li><i class="icon-flow-parallel"></i> icon-flow-parallel</li><li><i class="icon-brush"></i> icon-brush</li><li><i class="icon-paper-plane"></i> icon-paper-plane</li><li><i class="icon-magnet"></i> icon-magnet</li><li><i class="icon-gauge"></i> icon-gauge</li><li><i class="icon-traffic-cone"></i> icon-traffic-cone</li><li><i class="icon-cc"></i> icon-cc</li><li><i class="icon-cc-by"></i> icon-cc-by</li><li><i class="icon-cc-nc"></i> icon-cc-nc</li><li><i class="icon-cc-nc-eu"></i> icon-cc-nc-eu</li><li><i class="icon-cc-nc-jp"></i> icon-cc-nc-jp</li><li><i class="icon-cc-sa"></i> icon-cc-sa</li><li><i class="icon-cc-nd"></i> icon-cc-nd</li><li><i class="icon-cc-pd"></i> icon-cc-pd</li><li><i class="icon-cc-zero"></i> icon-cc-zero</li><li><i class="icon-cc-share"></i> icon-cc-share</li><li><i class="icon-cc-remix"></i> icon-cc-remix</li><li><i class="icon-github"></i> icon-github</li><li><i class="icon-github-circled"></i> icon-github-circled</li><li><i class="icon-flickr"></i> icon-flickr</li><li><i class="icon-flickr-circled"></i> icon-flickr-circled</li><li><i class="icon-vimeo"></i> icon-vimeo</li><li><i class="icon-vimeo-circled"></i> icon-vimeo-circled</li><li><i class="icon-twitter"></i> icon-twitter</li><li><i class="icon-twitter-circled"></i> icon-twitter-circled</li><li><i class="icon-facebook"></i> icon-facebook</li><li><i class="icon-facebook-circled"></i> icon-facebook-circled</li><li><i class="icon-facebook-squared"></i> icon-facebook-squared</li><li><i class="icon-gplus"></i> icon-gplus</li><li><i class="icon-gplus-circled"></i> icon-gplus-circled</li><li><i class="icon-pinterest"></i> icon-pinterest</li><li><i class="icon-pinterest-circled"></i> icon-pinterest-circled</li><li><i class="icon-tumblr"></i> icon-tumblr</li><li><i class="icon-tumblr-circled"></i> icon-tumblr-circled</li><li><i class="icon-linkedin"></i> icon-linkedin</li><li><i class="icon-linkedin-circled"></i> icon-linkedin-circled</li><li><i class="icon-dribbble"></i> icon-dribbble</li><li><i class="icon-dribbble-circled"></i> icon-dribbble-circled</li><li><i class="icon-wordpress"></i> icon-wordpress</li><li><i class="icon-instagram"></i> icon-instagram</li><li><i class="icon-stumbleupon"></i> icon-stumbleupon</li><li><i class="icon-stumbleupon-circled"></i> icon-stumbleupon-circled</li><li><i class="icon-lastfm"></i> icon-lastfm</li><li><i class="icon-lastfm-circled"></i> icon-lastfm-circled</li><li><i class="icon-rdio"></i> icon-rdio</li><li><i class="icon-rdio-circled"></i> icon-rdio-circled</li><li><i class="icon-spotify"></i> icon-spotify</li><li><i class="icon-spotify-circled"></i> icon-spotify-circled</li><li><i class="icon-qq"></i> icon-qq</li><li><i class="icon-instagrem"></i> icon-instagrem</li><li><i class="icon-dropbox"></i> icon-dropbox</li><li><i class="icon-evernote"></i> icon-evernote</li><li><i class="icon-flattr"></i> icon-flattr</li><li><i class="icon-skype"></i> icon-skype</li><li><i class="icon-skype-circled"></i> icon-skype-circled</li><li><i class="icon-renren"></i> icon-renren</li><li><i class="icon-sina-weibo"></i> icon-sina-weibo</li><li><i class="icon-paypal"></i> icon-paypal</li><li><i class="icon-picasa"></i> icon-picasa</li><li><i class="icon-soundcloud"></i> icon-soundcloud</li><li><i class="icon-mixi"></i> icon-mixi</li><li><i class="icon-behance"></i> icon-behance</li><li><i class="icon-google-circles"></i> icon-google-circles</li>
+					          </ul>
+					        </div>
+					        <div class="span3">
+					          <ul class="the-icons"><li><i class="icon-vkontakte"></i> icon-vkontakte</li><li><i class="icon-smashing"></i> icon-smashing</li><li><i class="icon-db-shape"></i> icon-db-shape</li><li><i class="icon-sweden"></i> icon-sweden</li><li><i class="icon-logo-db"></i> icon-logo-db</li><li><i class="icon-picture"></i> icon-picture</li><li><i class="icon-globe"></i> icon-globe</li><li><i class="icon-leaf"></i> icon-leaf</li><li><i class="icon-graduation-cap"></i> icon-graduation-cap</li><li><i class="icon-mic"></i> icon-mic</li><li><i class="icon-palette"></i> icon-palette</li><li><i class="icon-ticket"></i> icon-ticket</li><li><i class="icon-video"></i> icon-video</li><li><i class="icon-target"></i> icon-target</li><li><i class="icon-music"></i> icon-music</li><li><i class="icon-trophy"></i> icon-trophy</li><li><i class="icon-thumbs-up"></i> icon-thumbs-up</li><li><i class="icon-thumbs-down"></i> icon-thumbs-down</li><li><i class="icon-bag"></i> icon-bag</li><li><i class="icon-user"></i> icon-user</li><li><i class="icon-users"></i> icon-users</li><li><i class="icon-lamp"></i> icon-lamp</li><li><i class="icon-alert"></i> icon-alert</li><li><i class="icon-water"></i> icon-water</li><li><i class="icon-droplet"></i> icon-droplet</li><li><i class="icon-credit-card"></i> icon-credit-card</li><li><i class="icon-monitor"></i> icon-monitor</li><li><i class="icon-briefcase"></i> icon-briefcase</li><li><i class="icon-floppy"></i> icon-floppy</li><li><i class="icon-cd"></i> icon-cd</li><li><i class="icon-folder"></i> icon-folder</li><li><i class="icon-doc-text"></i> icon-doc-text</li><li><i class="icon-calendar"></i> icon-calendar</li><li><i class="icon-chart-line"></i> icon-chart-line</li><li><i class="icon-chart-bar"></i> icon-chart-bar</li><li><i class="icon-clipboard"></i> icon-clipboard</li><li><i class="icon-attach"></i> icon-attach</li><li><i class="icon-bookmarks"></i> icon-bookmarks</li><li><i class="icon-book"></i> icon-book</li><li><i class="icon-book-open"></i> icon-book-open</li><li><i class="icon-phone"></i> icon-phone</li><li><i class="icon-megaphone"></i> icon-megaphone</li><li><i class="icon-upload"></i> icon-upload</li><li><i class="icon-download"></i> icon-download</li><li><i class="icon-box"></i> icon-box</li><li><i class="icon-newspaper"></i> icon-newspaper</li><li><i class="icon-mobile"></i> icon-mobile</li><li><i class="icon-signal"></i> icon-signal</li><li><i class="icon-camera"></i> icon-camera</li><li><i class="icon-shuffle"></i> icon-shuffle</li><li><i class="icon-loop"></i> icon-loop</li><li><i class="icon-arrows-ccw"></i> icon-arrows-ccw</li><li><i class="icon-light-down"></i> icon-light-down</li><li><i class="icon-light-up"></i> icon-light-up</li><li><i class="icon-mute"></i> icon-mute</li><li><i class="icon-sound"></i> icon-sound</li><li><i class="icon-battery"></i> icon-battery</li><li><i class="icon-search"></i> icon-search</li><li><i class="icon-key"></i> icon-key</li><li><i class="icon-lock"></i> icon-lock</li><li><i class="icon-lock-open"></i> icon-lock-open</li><li><i class="icon-bell"></i> icon-bell</li><li><i class="icon-bookmark"></i> icon-bookmark</li><li><i class="icon-link"></i> icon-link</li><li><i class="icon-back"></i> icon-back</li><li><i class="icon-flashlight"></i> icon-flashlight</li><li><i class="icon-chart-area"></i> icon-chart-area</li><li><i class="icon-clock"></i> icon-clock</li><li><i class="icon-rocket"></i> icon-rocket</li><li><i class="icon-block"></i> icon-block</li>
+					          </ul>
+					        </div>
+					    </div>  
+
+
+					</div>
+				</div>
+				</div>
+
+			</section>
+		</div>
+
+		<!-- ============== -->
+		<!-- Footer section -->
+		<!-- ============== -->
+		
+	<footer>
+			<div class="container">
+				<section class="row foot">
+					<article class="span3">
+						<strong>Quick Links</strong>
+						<ul>
+							<li><a href="#">About Us</a></li>
+							<li><a href="#">Privacy</a></li>
+							<li><a href="#">Returns Policies</a></li>
+							<li><a href="#">News</a></li>
+							<li><a href="#">Feedback</a></li>
+							<li><a href="#">Contact Us</a></li>
+						</ul>
+					</article>
+					<article class="span3">
+						<strong>Latest Post</strong>
+						<ul>
+							<li><a href="post-right-sidebar.html">Big things are on the way</a><br /><small>posted on April 24, 2012</small></li>
+							<li><a href="post-right-sidebar.html">Product Image Galleries</a><br /><small>posted on June 13, 2012</small></li>
+							<li><a href="post-right-sidebar.html">So many options Reign is feature-packed</a><br /><small>posted on May 9, 2012</small></li>
+						</ul>
+					</article>
+					<article class="span3">
+						<strong>Tweets</strong>
+						<div id="tweet"></div>
+					</article>
+					<article class="span3">
+						<strong>Newsletter</strong>
+						<div>
+							<form class="form-inline">
+							<input class="input-medium" type="text" placeholder="Email address">
+							<button class="btn"><i class="icon-direction"></i></button>
+							</form>
+						</div>
+						<address class="row-fluid">
+							<div class="pull-left clabel"><i class="icon-location"></i></div>
+							<div class="pull-left cdata">1234 Street City, ST 73243 California</div>
+						</address>
+						<address class="row-fluid">
+							<div class="pull-left clabel"><i class="icon-phone"></i></div>
+							<div class="pull-left cdata">888-555-1234</div>
+						</address>
+						<address class="row-fluid">
+							<div class="pull-left clabel"><i class="icon-mail"></i></div>
+							<div class="pull-left cdata"><a href="#">hello@Tendershop.com</a></div>
+						</address>
+							
+					</article>
+				</section>
+
+			</div>
+			<section class="row-fluid doubleline">
+					<div class="container">
+					<div class="span6">
+		
+						<div class="payment amex"></div>
+						<div class="payment mastercard"></div>
+						<div class="payment visa"></div>
+						<div class="payment paypal"></div>
+						<!-- 
+						<div class="payment cirrus"></div>
+						<div class="payment delta"></div>
+						<div class="payment direct-debit"></div>
+						<div class="payment discover"></div>
+						<div class="payment ebay"></div>
+						<div class="payment googlecheckout"></div>
+						<div class="payment maestro"></div>
+						<div class="payment moneybookers"></div>
+						<div class="payment sagepay"></div>
+						<div class="payment solo"></div>
+						<div class="payment switch"></div>
+						<div class="payment visaelectron"></div>
+						<div class="payment 2checkout"></div>
+						<div class="payment westernunion"></div> 
+						-->
+					</div>
+					<div class="span6 currency">
+						<a href="#" class="active">USD</a> <a href="#">GBP</a> <a href="#">MYR</a> <a href="#">AUD</a>
+					</div>
+					</div>
+				</section>
+		
+				<section class="row-fluid social">
+					<div class="container">
+					<div class="pull-left">&copy; 2012 TenderShop</div>
+					<div class="pull-right">
+						<ul>
+							<li><a href="#"><i class="icon-facebook"></i></a></li>
+							<li><a href="#"><i class="icon-twitter"></i></a></li>
+							<li><a href="#"><i class="icon-gplus"></i></a></li>
+							<li><a href="#"><i class="icon-pinterest"></i></a></li>
+							<li><a href="#"><i class="icon-tumblr"></i></a></li>
+							<li><a href="#"><i class="icon-instagrem"></i></a></li>
+						</ul>
+					</div>
+					</div>
+				</section>
+			
+		</footer>
+	
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+	<script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?sensor=false"></script>
+	<script type="text/javascript" src="js/jquery.tweet.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/shop.js"></script>
+	<script type="text/javascript" src="js/script.js"></script>
+	
+	</body>
+</html>

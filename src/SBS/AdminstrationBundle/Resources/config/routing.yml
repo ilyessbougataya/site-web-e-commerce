@@ -1,0 +1,44 @@
+sbs_adminstration_categorie:
+    path:     /admin/categorie
+    defaults: { _controller: SBSAdminstrationBundle:Categorie:index }
+sbs_adminstration_home:
+    path:     /admin/home
+    defaults: { _controller: SBSAdminstrationBundle:Produit:index }
+sbs_adminstration_addcat:
+    path:     /admin/addcategorie
+    defaults: { _controller: SBSAdminstrationBundle:Categorie:addCategorie }
+sbs_adminstration_addcats:
+    path:     /admin/addcat
+    defaults: { _controller: SBSAdminstrationBundle:Categorie:addCat }
+sbs_adminstration_test:
+    path:     /admin/test
+    defaults: { _controller: SBSAdminstrationBundle:Categorie:test }
+sbs_adminstration_editcat:
+    path:     /admin/editecategorie/{idcat}
+    defaults: { _controller: SBSAdminstrationBundle:Categorie:editCategorie }
+sbs_adminstration_listecat:
+    path:     /admin/listecat
+    defaults: { _controller: SBSAdminstrationBundle:Categorie:listeCat }
+sbs_adminstration_delcat:
+    path:     /admin/delcat/{idcat}
+    defaults: { _controller: SBSAdminstrationBundle:Categorie:deleteCategorie }
+sbs_adminstration_addprd:
+    path:     /admin/addprd/{id}
+    defaults:
+        _controller: SBSAdminstrationBundle:Produit:addPrd
+        id: 1
+sbs_adminstration_editprd:
+    path:     /admin/editprd/{id}
+    defaults: 
+        _controller: SBSAdminstrationBundle:Produit:editPrd
+        id: 1
+sbs_adminstration_listeproduit:
+    path:     /admin/listeproduit/{idcat}
+    defaults:  
+        _controller: SBSAdminstrationBundle:Produit:listeProduit
+        idcat: 1
+sbs_adminstration_delprd:
+    path:     /admin/delprd/{id}/{idcat}
+    defaults:  
+        _controller: SBSAdminstrationBundle:Produit:DeletePrd
+        idcat: 1

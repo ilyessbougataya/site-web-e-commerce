@@ -1,0 +1,31 @@
+sbs_commandes_homepage:
+    path:     /default
+    defaults: { _controller: SBSCommandesBundle:Commande:viewCategorie }
+sbs_commandes_produit:
+    path:     /view/{idprd}
+    defaults:  
+        _controller: SBSCommandesBundle:Commande:viewProduit
+        idprd: 11
+sbs_commandes_tes:
+    path:     /test/{id}
+    defaults: { _controller: SBSCommandesBundle:Commande:pan }
+sbs_commandes_afffihcer:
+    path:     /afficher
+    defaults: { _controller: SBSCommandesBundle:Commande:afficher }
+ajouter:
+    pattern:  /ajouter/{id}
+    defaults: { _controller: SBSCommandesBundle:Commande:ajouter }
+panier:
+    pattern:  /panier
+    defaults: { _controller: SBSCommandesBundle:Commande:panier }
+supprimer:
+    pattern:  /supprimer/{id}
+    defaults: { _controller: SBSCommandesBundle:Commande:supprimer }
+categories:
+    pattern:  /categories
+    defaults: { _controller: SBSCommandesBundle:Commande:ViewCategories }
+liste_produits:
+    pattern:  /produits/{id}
+    defaults:  
+        _controller: SBSCommandesBundle:Commande:ViewListeprd
+        id: 1

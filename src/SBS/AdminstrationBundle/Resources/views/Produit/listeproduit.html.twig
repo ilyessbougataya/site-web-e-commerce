@@ -1,0 +1,51 @@
+{% extends "SBSAdminstrationBundle::tempalte.html.twig" %}
+
+{% block enhead %}
+	<h2>Produits : </h2>   
+    
+{% endblock %}
+
+{% block contenu %}
+				
+
+<!-- Advanced Tables -->
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                             Liste des Catégories :
+                        </div>
+                        <div class="panel-body">
+                            <div class="table-responsive">
+                                <table class="table table-striped table-bordered table-hover" id="dataTables">
+                                    <thead>
+                                        <tr>
+                                            <th>Libellé</th>
+                                             <th>Actions Produit</th>
+                                            <th>Liste Couleurs</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                    {% for prd in listeprd %}
+                                        <tr class="odd gradeX">
+                                            <td>{{ prd.nom }}</td>
+                                            <td>
+                                            <a href={{ path('sbs_adminstration_editprd',{ 'id' : prd.id  } ) }}  class="btn btn-primary btn-xs">Editer Produit</a>
+                                            <a href={{ path('sbs_adminstration_delprd',{ 'id' : prd.id , 'idcat' : prd.categorie.id } ) }} class="btn btn-danger btn-xs">Supprimer Produit</a>
+											<a href="#" class="btn btn-success btn-xs">Ajouter Couleur</a>	
+										   </td>
+                                            <td>
+                                            <a href="#" class="btn btn-success btn-xs">View</a>
+                                            </td>
+                                        </tr>
+                                    {% endfor %}
+                                    </tbody>
+                                </table>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <!--End Advanced Tables -->
+
+  
+
+ {% endblock %}
+

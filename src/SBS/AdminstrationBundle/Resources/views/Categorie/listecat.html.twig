@@ -1,0 +1,51 @@
+{% extends "SBSAdminstrationBundle::tempalte.html.twig" %}
+
+{% block enhead %}
+	<h2>Categorie</h2>   
+    
+{% endblock %}
+
+{% block contenu %}
+				
+
+<!-- Advanced Tables -->
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                             Liste des Catégories :
+                        </div>
+                        <div class="panel-body">
+                            <div class="table-responsive">
+                                <table class="table table-striped table-bordered table-hover" id="dataTables">
+                                    <thead>
+                                        <tr>
+                                            <th>Libellé</th>
+                                             <th>Actions Catégoires </th>
+                                            <th>Actions Produits</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                    {% for categorie in listecat %}
+                                        <tr class="odd gradeX">
+                                            <td>{{ categorie.nom }}</td>
+                                            <td>
+                                            <a href={{ path('sbs_adminstration_editcat',{ 'idcat' : categorie.id  } ) }}  class="btn btn-primary btn-xs">Editer</a>
+                                            <a href={{ path('sbs_adminstration_delcat',{ 'idcat' : categorie.id  } ) }} class="btn btn-danger btn-xs">Supprimer</a>
+                                            </td>
+                                            <td>
+											<a href={{ path('sbs_adminstration_addprd',{ 'id' : categorie.id  } ) }}  class="btn btn-primary btn-xs">Ajouter Produit</a>
+                                            <a href={{ path('sbs_adminstration_listeproduit',{ 'idcat' : categorie.id  } ) }} class="btn btn-success btn-xs">Liste Produits</a>
+                                            </td>
+                                        </tr>
+                                    {% endfor %}
+                                    </tbody>
+                                </table>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <!--End Advanced Tables -->
+
+  
+
+ {% endblock %}
+

@@ -1,0 +1,4 @@
+services:
+#    sbs_commandes.example:
+#        class: SBS\CommandesBundle\Example
+#        arguments: ["@service_id", "plain_value", %parameter%]
